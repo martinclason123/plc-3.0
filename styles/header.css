@@ -1,0 +1,16 @@
+.header .container__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  width: 15em;
+}
+.header a {
+  font-size: 2.4em;
+  text-decoration: none;
+  color: #ef3d63;
+  font-weight: 700;
+  text-transform: capitalize;
+}

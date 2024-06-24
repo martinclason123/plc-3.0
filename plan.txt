@@ -1,0 +1,9 @@
+PLAN:
+
+1. Create markup containers and the default container CSS.
+2. Develop each section mobile first, then desktop.
+3. Add JavScript effects, calendly/form integrations.
+4. Add SEO info, and favicon
+5. Add google tags for metrics
+6. Deploy to vercel
+7. Get lighthouse score and make adjustments.

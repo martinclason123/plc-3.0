@@ -1,0 +1,145 @@
+:root {
+  --accent-primary: "#EF3D63";
+  --font-primary: "Poppins", sans-serif;
+}
+
+/* Box sizing rule */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-size: inherit;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  color: #2d2d2d;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--font-primary);
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set default display for HTML5 elements in older browsers */
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+.container {
+  font-size: 1.563vw;
+  padding: 4em;
+}
+
+.lg-only {
+  display: none;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #7f5ba6;
+  border-radius: 0.5em;
+  text-decoration: none;
+  height: 6.2em;
+  margin: 1.8em 0;
+}
+
+.cta-text {
+  font-size: 2.8em;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+@media (min-width: 641px) {
+  .container {
+    font-size: 0.521vw;
+  }
+  .container__inner {
+    margin: 0 auto;
+    width: 132em;
+  }
+  .sm-only {
+    display: none;
+  }
+  .lg-only {
+    display: initial;
+  }
+}
+
+@media (min-width: 1921px) {
+  .container {
+    font-size: 10px;
+  }
+}
