@@ -1,0 +1,76 @@
+.connect .card {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.connect .card img {
+  width: 25em;
+  margin: 0 auto;
+}
+
+.connect .card p {
+  text-align: center;
+  font-size: 2.4em;
+  text-transform: capitalize;
+  margin-top: 1em;
+}
+
+.connect form {
+  margin-top: 8em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+}
+
+.connect .full-row {
+  display: flex;
+  justify-content: space-between;
+}
+.connect .half-width-field {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.connect label {
+  font-size: 3em;
+}
+
+.connect input {
+  font-size: 3em;
+  border-radius: 0.5em;
+  margin-top: 0.5em;
+  padding: 0.25em;
+}
+
+.connect .full-width-field {
+  width: 100%;
+}
+
+.connect .full-width-field input {
+  width: 100%;
+}
+
+.connect .cta {
+  margin: 3em 0;
+  border-radius: 1em;
+  height: 7em;
+}
+
+.connect .cta .cta-text {
+  font-size: 3em;
+}
+
+@media (min-width: 641px) {
+  .connect .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+  }
+
+  .connect form,
+  .connect .card {
+    width: 48%;
+  }
+}

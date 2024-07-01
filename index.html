@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="styles/globalStyles.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/services.css" />
+    <link rel="stylesheet" href="styles/process.css" />
+    <link rel="stylesheet" href="styles/connect.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -26,6 +31,7 @@
       </div>
     </header>
     <main>
+      <!-- Hero -->
       <section class="hero container">
         <div class="container__inner">
           <div class="copy">
@@ -46,18 +52,225 @@
           />
         </div>
       </section>
+      <!-- Divider Top -->
+      <picture>
+        <source
+          srcset="assets/shared/divider-blue-m.svg"
+          type="image/svg"
+          media="(max-width:640px)"
+        />
+        <img
+          alt=""
+          src="assets/shared/divider-blue-d.svg"
+          class="divider divider--top"
+        />
+      </picture>
+      <!-- End Divider Top -->
+
+      <!-- Who We Help -->
       <section class="services container">
-        <div class="container__inner"></div>
+        <div class="container__inner">
+          <h1 class="section-title">Who we help</h1>
+          <div class="cards">
+            <div class="card">
+              <img alt="shop icon" src="assets/services/house.svg" />
+              <h2>Small business</h2>
+              <p>
+                Custom landing pages enabling customers to find your business
+                and schedule appointments
+              </p>
+            </div>
+            <div class="card">
+              <img alt="puppy icon" src="./assets/services/puppy.svg" />
+              <h2>Puppy breeders</h2>
+              <p>
+                A website dedicated to your puppies, allowing you to list and
+                accept payments your way
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
+      <!-- Divider Bottom -->
+      <picture>
+        <source
+          srcset="assets/shared/divider-purple-m-01.svg"
+          type="image/svg"
+          media="(max-width:640px)"
+        />
+        <img
+          alt=""
+          src="assets/shared/divider-purple-d-01.svg"
+          class="divider divider--bottom"
+        />
+      </picture>
+      <!-- End Divider Top -->
+
+      <!-- Process -->
       <section class="process container">
-        <div class="container__inner"></div>
+        <div class="container__inner">
+          <h1 class="section-title">Our Easy Process</h1>
+          <div class="cards">
+            <div class="card">
+              <img alt="smiley icon" src="assets/process/smiley-01.svg" />
+              <h2>Let's chat!</h2>
+              <p>
+                We'll have a relaxed conversation about your business goals.
+              </p>
+            </div>
+            <div class="card">
+              <img alt="light bulb icon" src="./assets/process/bulb-01.svg" />
+              <h2>Create your plan</h2>
+              <p>
+                We'll have a relaxed conversation about your business goals.
+              </p>
+            </div>
+            <div class="card">
+              <img alt="rocket icon" src="./assets/process/rocket-01.svg" />
+              <h2>Go online</h2>
+              <p>
+                We'll handle all the technical stuff and get your business
+                online!
+              </p>
+            </div>
+          </div>
+          <a class="cta" href="https//:casd.com"
+            ><span class="cta-text">Schedule a call</span></a
+          >
+        </div>
       </section>
-      <section class="contact container">
-        <div class="container__inner"></div>
+
+      <!-- Divider Top -->
+      <picture>
+        <source
+          srcset="assets/shared/divider-blue-m.svg"
+          type="image/svg"
+          media="(max-width:640px)"
+        />
+        <img
+          alt=""
+          src="assets/shared/divider-blue-d.svg"
+          class="divider divider--top"
+        />
+      </picture>
+      <!-- End Divider Top -->
+
+      <!-- Connect -->
+      <section class="connect container">
+        <div class="container__inner">
+          <h1 class="section-title">Let's connect</h1>
+          <div class="content">
+            <div class="card">
+              <img
+                alt="light bulb icon"
+                src="./assets/connect/message-01.svg"
+              />
+              <p>
+                Want us to contact you? Getting started can be intimidating.
+                Submit your contact information, and we'll reach out to see how
+                we can help
+              </p>
+            </div>
+            <form onsubmit="">
+              <div class="full-row">
+                <div class="half-width-field">
+                  <label for="first-name">First Name</label>
+                  <input id="first-name" type="text" />
+                </div>
+                <div class="half-width-field">
+                  <label for="last-name">Last Name</label>
+                  <input id="last-name" type="text" />
+                </div>
+              </div>
+              <div class="full-row">
+                <div class="full-width-field">
+                  <label for="email">Email Address</label>
+                  <input id="email" type="email" />
+                </div>
+              </div>
+              <div class="full-row">
+                <div class="full-width-field">
+                  <label for="phone">Phone Number (optional)</label>
+                  <input id="phone" type="number" />
+                </div>
+              </div>
+              <a class="cta" href="https//:casd.com"
+                ><span class="cta-text">Schedule a call</span></a
+              >
+            </form>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer container">
-      <div class="container__inner"></div>
+      <div class="container__inner">
+        <div class="content">
+          <div class="quicklinks">
+            <div class="quicklinks__container">
+              <h2>Contact Us</h2>
+              <ul>
+                <li>(616) 238-9368</li>
+                <li>martin@pixellabco.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="quicklinks">
+            <div class="quicklinks__container">
+              <h2>Quick Links</h2>
+              <ul>
+                <li>Home</li>
+                <li>Our Process</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="quicklinks">
+            <div class="quicklinks__container">
+              <h2>Follow Us</h2>
+              <ul>
+                <li>
+                  <a href="facebook.com"
+                    ><img
+                      alt="facebook icon"
+                      src="assets/socials/facebook-01.svg"
+                      class="socials-icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href="linkedin.com"
+                    ><img
+                      alt="linkedin icon"
+                      src="assets/socials/linkedin-01.svg"
+                      class="socials-icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href="x.com"
+                    ><img
+                      alt="x icon"
+                      src="assets/socials/x-01.svg"
+                      class="socials-icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href="youtube.com"
+                    ><img
+                      alt="youtube icon"
+                      src="assets/socials/youtube-01.svg"
+                      class="socials-icon"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img
+            src="assets/socials/logo-white-01.svg"
+            class="footer-logo"
+            alt="pixel lab co"
+          />
+        </div>
+        <p class="copyright">2024 Pixel Lab Co. Al l rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>

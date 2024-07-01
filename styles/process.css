@@ -1,0 +1,53 @@
+.process .cards {
+  padding-top: 6em;
+  display: flex;
+  flex-direction: column;
+  gap: 15em;
+}
+.process .card {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.process .card img {
+  width: 25em;
+  margin: 0 auto;
+}
+
+.process .card h2 {
+  text-align: center;
+  font-size: 4em;
+  white-space: nowrap;
+  line-height: 2;
+  text-transform: capitalize;
+}
+
+.process .card p {
+  text-align: center;
+  font-size: 2.4em;
+  text-transform: capitalize;
+}
+
+.process .cta {
+  margin: 12em auto 0 auto;
+}
+
+@media (max-width: 640px) {
+  .process .section-title {
+    font-size: 6em;
+    margin-top: 2em;
+  }
+}
+
+@media (min-width: 641px) {
+  .process .cards {
+    flex-direction: row;
+  }
+  .process .section-title {
+    margin-top: 3em;
+  }
+  .process .cta {
+    width: 36em;
+    margin: 8em 0;
+  }
+}
