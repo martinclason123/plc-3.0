@@ -114,12 +114,33 @@ section {
   text-decoration: none;
   height: 6.2em;
   margin: 1.8em 0;
+  transition: background 300ms ease-in-out;
+}
+
+.cta:hover {
+  background: #5e229e;
+}
+
+.cta--calendar::before {
+  content: url("/assets/hero/calendar.svg");
+  vertical-align: middle;
+  position: absolute;
+  width: 1em;
+  left: -1.5em;
+  top: 0.13em;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.cta:hover .cta--calendar::before {
+  opacity: 1;
 }
 
 .cta-text {
   font-size: 2.8em;
   color: #fff;
   text-transform: capitalize;
+  position: relative;
 }
 
 .divider {

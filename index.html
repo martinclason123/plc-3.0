@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -40,8 +39,11 @@
               Helping small businesses and puppy breeders reach more customers
               online.
             </p>
-            <a class="cta" href="https//:casd.com"
-              ><span class="cta-text">Schedule a call</span></a
+            <a
+              class="cta"
+              href="https://calendly.com/martin-martinclason/30min"
+              target="_blank"
+              ><span class="cta-text cta--calendar">Schedule a call</span></a
             >
             <img src="assets/shared/purple-blocks.svg" alt="" />
           </div>
@@ -134,8 +136,11 @@
               </p>
             </div>
           </div>
-          <a class="cta" href="https//:casd.com"
-            ><span class="cta-text">Schedule a call</span></a
+          <a
+            class="cta"
+            href="https://calendly.com/martin-martinclason/30min"
+            target="_blank"
+            ><span class="cta-text cta--calendar">Schedule a call</span></a
           >
         </div>
       </section>
@@ -171,32 +176,46 @@
                 we can help
               </p>
             </div>
-            <form onsubmit="">
+            <p id="success-message">
+              Thank you for reaching out! We will call you as soon as possible!
+            </p>
+            <form onsubmit="submitForm(event)">
               <div class="full-row">
                 <div class="half-width-field">
                   <label for="first-name">First Name</label>
-                  <input id="first-name" type="text" />
+                  <input
+                    id="first-name"
+                    type="text"
+                    name="first-name"
+                    required
+                  />
                 </div>
                 <div class="half-width-field">
                   <label for="last-name">Last Name</label>
-                  <input id="last-name" type="text" />
+                  <input id="last-name" type="text" name="last-name" />
                 </div>
               </div>
               <div class="full-row">
                 <div class="full-width-field">
                   <label for="email">Email Address</label>
-                  <input id="email" type="email" />
+                  <input id="email" type="email" name="email" required />
                 </div>
               </div>
               <div class="full-row">
                 <div class="full-width-field">
                   <label for="phone">Phone Number (optional)</label>
-                  <input id="phone" type="number" />
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    required
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  />
                 </div>
               </div>
-              <a class="cta" href="https//:casd.com"
-                ><span class="cta-text">Schedule a call</span></a
-              >
+              <button class="cta" type="submit">
+                <span class="cta-text" id="form-submit">Schedule a call</span>
+              </button>
             </form>
           </div>
         </div>
@@ -269,8 +288,9 @@
             alt="pixel lab co"
           />
         </div>
-        <p class="copyright">2024 Pixel Lab Co. Al l rights reserved.</p>
+        <p class="copyright">2024 Pixel Lab Co. All rights reserved.</p>
       </div>
     </footer>
   </body>
+  <script src="scripts/submitForm.js"></script>
 </html>

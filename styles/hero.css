@@ -1,4 +1,3 @@
-
 .hero h1 {
   font-size: 6em;
   line-height: 1.1;
@@ -23,6 +22,10 @@
 
 .hero .cta {
   margin-top: 4em;
+}
+
+.hero .cta--calendar {
+  position: relative;
 }
 
 @media (min-width: 641px) {
