@@ -1,6 +1,7 @@
 .footer {
   padding: 12em 4em 8em 4em;
   background: #474748;
+  margin-top: 10em;
 }
 
 .footer .quicklinks h2 {
@@ -31,6 +32,10 @@
   position: absolute;
   left: 0;
   top: 0;
+}
+.footer .quicklinks li a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .footer .socials-icon {
@@ -73,6 +78,6 @@
   }
 
   .footer .socials-icon {
-    height: 2.4em;
+    height: 1.4em;
   }
 }

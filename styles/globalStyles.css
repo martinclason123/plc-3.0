@@ -192,6 +192,9 @@ section {
   .section-title::after {
     width: 8%;
   }
+  .divider--connect {
+    margin-top: 4em;
+  }
 }
 
 @media (min-width: 1921px) {
