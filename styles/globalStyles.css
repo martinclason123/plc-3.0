@@ -1,6 +1,15 @@
+@font-face {
+  font-family: "poppinsregular";
+  src: url("/assets/fonts/poppins/poppins-regular-webfont.woff2")
+      format("woff2"),
+    url("/assets/fonts/poppins/poppins-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --accent-primary: "#EF3D63";
-  --font-primary: "Poppins", sans-serif;
+  --font-primary: "poppinsregular", sans-serif;
 }
 
 /* Box sizing rule */
