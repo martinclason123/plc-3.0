@@ -10,7 +10,8 @@
 .header a {
   font-size: 2.4em;
   text-decoration: none;
-  color: #ef3d63;
+  /* color: #ef3d63; */
+  color: #c3170c;
   font-weight: 700;
   text-transform: capitalize;
 }
