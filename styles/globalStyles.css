@@ -55,6 +55,7 @@ a:not([class]) {
 /* Make images easier to work with */
 img {
   width: 100%;
+  height: auto;
   max-width: 100%;
   display: block;
 }
